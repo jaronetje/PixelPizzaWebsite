@@ -1,0 +1,11 @@
+body{
+    min-height: 100vh;
+}
+
+a{
+    color: #859394;
+}
+
+a:hover{
+    color: #808A8B;
+}
