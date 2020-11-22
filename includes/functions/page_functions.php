@@ -12,7 +12,9 @@ function getTopPage(){
 }
 function getFooterPage(){
     global $twig;
-    return $twig->render('footer.html');
+    return $twig->render('footer.html', [
+        "contacts" => selectQuery("SELECT * FROM contact")
+    ]);
 }
 function getHomePage(){
     global $twig;

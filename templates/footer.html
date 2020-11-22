@@ -4,15 +4,11 @@
             <div class="col-md-3 mx-auto">
                 <h5 class="mt-3 mb-4">Contact</h5>
                 <ul class="list-unstyled">
-                    <li>
-                        <a href="https://discord.com/invite/MzbsFPe">Discord server</a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/PixelPizza3">Twitter</a>
-                    </li>
-                    <li>
-                        <a href="mailto:pixel-pizza@outlook.com">Email</a>
-                    </li>
+                    {% for contact in contacts %}
+                        <li>
+                            <a href="{{contact.url}}">{{contact.text}}</a>
+                        </li>
+                    {% endfor %}
                 </ul>
             </div>
             <hr class="clearfix w-100 d-md-none">
