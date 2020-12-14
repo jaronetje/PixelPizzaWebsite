@@ -8,7 +8,7 @@ require_once ROOT."/includes/session_start.php";
 require_once ROOT."/includes/autoload.php";
 
 if(!LOCAL && !isHttps()){
-    header("location: https://".$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI]);
+    header("location: https://".$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"]);
 }
 
 require_once ROOT."/includes/vendor/autoload.php";
